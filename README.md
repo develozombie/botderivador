@@ -13,18 +13,24 @@
  4. No ha pasado ningún control de pruebas funcionales, unitarias ni de seguridad.
  
  # Importante:
-- Deberás crear un archivo appsettings.json dentro del directorio RouterBot con la siguiente estructura:
+- Deberás crear un archivo appsettings.json dentro del directorio IntermediatorBotSample con la siguiente estructura:
 ```json
 {
   "MicrosoftAppId": "",
   "MicrosoftAppPassword": "",
-  //Configura las llaves de DirectChannel, QnA y Luis
-  "Llaves": {
+  "BotBasePath": "/api",
+  "BotMessagesPath": "/messages",
+  "AzureTableStorageConnectionString": "",
+  "RejectConnectionRequestIfNoAggregationChannel": true,
+  "PermittedAggregationChannels": "msteams, directline",
+  "NoDirectConversationsWithChannels": "emulator, facebook, skype, webchat",
+    "Llaves": {
     "agente": "",
     "cuentas": "",
     "tarjetas": "",
-    "preguntas": ""
+    "preguntas": "",
+    "reclamos": ""
   }
-  }
+}
 
 ```
