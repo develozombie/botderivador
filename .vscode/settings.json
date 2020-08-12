@@ -1,0 +1,4 @@
+{
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "IntermediatorBotSample/bin/Release/netcoreapp2.2/publish"
+}

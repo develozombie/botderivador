@@ -1,0 +1,29 @@
+﻿@page
+@using  IntermediatorBotSample.Pages
+@model IndexModel
+@{
+}
+
+<h1>BCP - Bot Derivador</h1>
+
+
+<p>The bot endpoint URL is: <a id="botEndpointUrl" /></p>
+
+<script>
+    var botEndpointUrlLink = document.getElementById("botEndpointUrl");
+    botEndpointUrlLink.setAttribute('href', location.protocol + "//" + location.host + "@Model.BotEndpointPath");
+    botEndpointUrlLink.innerHTML = location.protocol + "//" + location.host + "@Model.BotEndpointPath";
+</script>
+
+<p>The bot credentials are:</p>
+<ul>
+    <li id="botAppId" />
+    <li id="botAppPassword" />
+</ul>
+
+<script>
+    var botAppIdItem = document.getElementById("botAppId");
+    botAppIdItem.innerHTML = "App ID: @Model.BotAppId";
+    var botAppPasswordItem = document.getElementById("botAppPassword");
+    botAppPasswordItem.innerHTML = "App password: @Model.BotAppPassword";
+</script>

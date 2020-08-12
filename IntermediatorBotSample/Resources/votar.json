@@ -1,0 +1,131 @@
+{
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "TextBlock",
+      "size": "Medium",
+      "weight": "Bolder",
+      "color": "Accent",
+      "text": "Califica tu experiencia"
+    },
+    {
+      "type": "TextBlock",
+      "separator": true,
+      "text": "Por favor, califica tu experiencia y",
+      "wrap": true
+    },
+    {
+      "type": "ColumnSet",
+      "spacing": "Medium",
+      "columns": [
+        {
+          "type": "Column",
+          "selectAction": {
+            "type": "Action.Submit",
+            "data": "Terrible"
+          },
+          "items": [
+            {
+              "type": "Image",
+              "horizontalAlignment": "Center",
+              "url": "https://icon-library.net/images/small-star-icon/small-star-icon-18.jpg",
+              "height": "30px"
+            },
+            {
+              "type": "TextBlock",
+              "horizontalAlignment": "Center",
+              "text": "Terrible"
+            }
+          ],
+          "width": "stretch"
+        },
+        {
+          "type": "Column",
+          "selectAction": {
+            "type": "Action.Submit",
+            "data": "Malo"
+          },
+          "items": [
+            {
+              "type": "Image",
+              "horizontalAlignment": "Center",
+              "url": "https://icon-library.net/images/small-star-icon/small-star-icon-18.jpg",
+              "height": "30px"
+            },
+            {
+              "type": "TextBlock",
+              "horizontalAlignment": "Center",
+              "text": "Malo"
+            }
+          ],
+          "width": "stretch"
+        },
+        {
+          "type": "Column",
+          "selectAction": {
+            "type": "Action.Submit",
+            "data": "Regular"
+          },
+          "items": [
+            {
+              "type": "Image",
+              "horizontalAlignment": "Center",
+              "url": "https://icon-library.net/images/small-star-icon/small-star-icon-18.jpg",
+              "height": "30px"
+            },
+            {
+              "type": "TextBlock",
+              "horizontalAlignment": "Center",
+              "text": "Regular"
+            }
+          ],
+          "width": "stretch"
+        },
+        {
+          "type": "Column",
+          "selectAction": {
+            "type": "Action.Submit",
+            "data": "Bueno"
+          },
+          "items": [
+            {
+              "type": "Image",
+              "horizontalAlignment": "Center",
+              "url": "https://icon-library.net/images/small-star-icon/small-star-icon-18.jpg",
+              "height": "30px"
+            },
+            {
+              "type": "TextBlock",
+              "horizontalAlignment": "Center",
+              "text": "Bueno"
+            }
+          ],
+          "width": "stretch"
+        },
+        {
+          "type": "Column",
+          "selectAction": {
+            "type": "Action.Submit",
+            "data": "Excelente"
+          },
+          "items": [
+            {
+              "type": "Image",
+              "horizontalAlignment": "Center",
+              "url": "https://icon-library.net/images/small-star-icon/small-star-icon-18.jpg",
+              "height": "30px"
+            },
+            {
+              "type": "TextBlock",
+              "horizontalAlignment": "Center",
+              "text": "Excelente"
+            }
+          ],
+          "width": "stretch"
+        }
+      ]
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0"
+}
