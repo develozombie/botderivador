@@ -55,7 +55,7 @@ namespace IntermediatorBotSample.Bot
                 heroCard = new HeroCard()
                 {
                     Title = $"Hola {usuariorigen}!",
-                    Subtitle = "Bienvenido al servicio de gestión de consultas del BCP",
+                    Subtitle = "Bienvenido al servicio de gestión de consultas",
                     Text = $"Mi propósito es aprender de la psicohistoria y seguir las 3 reglas de Asimov, pero tambíen ayudarte a atender a tus clientes",
                     Buttons = new List<CardAction>()
                     {
@@ -337,7 +337,7 @@ namespace IntermediatorBotSample.Bot
             string respuesta;
             using (WebClient wc = new WebClient())
             {
-                string URI = "https://qnameu2chccd01.azurewebsites.net/qnamaker/knowledgebases/87d9abc9-08e9-4f70-906a-f015ebce3faf/generateAnswer";
+                string URI = "https://<botespecializado>.azurewebsites.net/qnamaker/knowledgebases/<id-kb>/generateAnswer";
 
                 var pregunta = new { question = $"{context.Activity.Text.ToLower()}" };
                 var dataString = Newtonsoft.Json.JsonConvert.SerializeObject(pregunta);
